@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "Exo 2", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F5F7F8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.2s;
+}
+button:active {
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    padding: 14px 0;
+    margin-bottom: 24px;
+    background-color: #F4CE14;
+    color: black;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scorecard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 14px;
+    border: 3px solid black;
+    width: 90%;
+    padding: 20px 0;
+    border-radius: 20px;
+    color: black;
+}
+.scorecard .wickets-runs {
+    font-size: 60px;
+}
+.scorecard .balls-bowled {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.timeline {
+    color: black;
+    border: 2px solid black;
+    width: 85%;
+    font-size: 18px;
+    font-style: italic;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 6px;
+    overflow-wrap: break-word;
+    letter-spacing: 2px;
+}
+
+.runs-button-box {
+    margin: 38px 0 24px 0;
+}
+
+.special-balls button, .runs-button-box button {
+    font-size: 25px;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+}
+
+.runs-button-box button {
+    margin: 0 2px;
+}
+.special-balls button {
+    margin: 0 10px 10px 10px;
+    font-style: italic;
+}
+.wicket-button {
+    background-color: #D72323;
+    color: white;
+}
+.no-ball-button {
+    background-color: #FFC100;
+    color: black;
+}
+
+.delete-ball-button {
+    font-size: 24px;
+    padding: 8px 20px;
+    margin: 30px 0 22px 0;
+    border-radius: 26px;
+}
+
+.screenshot-button {
+    font-size: 20px;
+    font-style: italic;
+    margin: 14px 0;
+    padding: 7px 12px;
+    border-radius: 26px;
+    background-color: #002379;
+    color: #F5F7F8;
+}
+
+.reset-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #A9A9A9;
+    color: #F5F7F8;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 20px 0 ;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: auto;
+    padding: 4px 0;
+    text-align: center;
+    width: 100%;
+    background-color: #F4CE14;
+    color: black;
+}
